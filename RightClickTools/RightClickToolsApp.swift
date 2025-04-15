@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct RightClickToolsApp: App {
+    // 注入AppDelegate
+    @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
     var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+        // 隐藏主窗口
+        Settings {
+            EmptyView()
+        }.windowStyle(HiddenTitleBarWindowStyle())
     }
 }

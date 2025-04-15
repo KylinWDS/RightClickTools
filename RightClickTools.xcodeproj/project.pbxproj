@@ -6,7 +6,18 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F145A57D2DAE655E0047D2F1 /* RightClickExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F145A5742DAE655E0047D2F1 /* RightClickExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
+		F145A57A2DAE655E0047D2F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1F95DA62DAE3C8E0043F3FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F145A5732DAE655E0047D2F1;
+			remoteInfo = RightClickExtension;
+		};
 		F1F95DBD2DAE3C8F0043F3FB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F1F95DA62DAE3C8E0043F3FB /* Project object */;
@@ -23,13 +34,51 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F145A57C2DAE655E0047D2F1 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F145A57D2DAE655E0047D2F1 /* RightClickExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		F145A5742DAE655E0047D2F1 /* RightClickExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RightClickExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1F95DAE2DAE3C8E0043F3FB /* RightClickTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RightClickTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1F95DBC2DAE3C8F0043F3FB /* RightClickToolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RightClickToolsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1F95DC62DAE3C8F0043F3FB /* RightClickToolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RightClickToolsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		F145A57E2DAE655E0047D2F1 /* Exceptions for "RightClickExtension" folder in "RightClickExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = F145A5732DAE655E0047D2F1 /* RightClickExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		F145A5632DAE57D30047D2F1 /* Templates */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Templates;
+			sourceTree = "<group>";
+		};
+		F145A5752DAE655E0047D2F1 /* RightClickExtension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				F145A57E2DAE655E0047D2F1 /* Exceptions for "RightClickExtension" folder in "RightClickExtension" target */,
+			);
+			path = RightClickExtension;
+			sourceTree = "<group>";
+		};
 		F1F95DB02DAE3C8E0043F3FB /* RightClickTools */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = RightClickTools;
@@ -48,6 +97,13 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F145A5712DAE655E0047D2F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F1F95DAB2DAE3C8E0043F3FB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -75,9 +131,11 @@
 		F1F95DA52DAE3C8E0043F3FB = {
 			isa = PBXGroup;
 			children = (
+				F145A5632DAE57D30047D2F1 /* Templates */,
 				F1F95DB02DAE3C8E0043F3FB /* RightClickTools */,
 				F1F95DBF2DAE3C8F0043F3FB /* RightClickToolsTests */,
 				F1F95DC92DAE3C8F0043F3FB /* RightClickToolsUITests */,
+				F145A5752DAE655E0047D2F1 /* RightClickExtension */,
 				F1F95DAF2DAE3C8E0043F3FB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +146,7 @@
 				F1F95DAE2DAE3C8E0043F3FB /* RightClickTools.app */,
 				F1F95DBC2DAE3C8F0043F3FB /* RightClickToolsTests.xctest */,
 				F1F95DC62DAE3C8F0043F3FB /* RightClickToolsUITests.xctest */,
+				F145A5742DAE655E0047D2F1 /* RightClickExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,6 +154,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F145A5732DAE655E0047D2F1 /* RightClickExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F145A57F2DAE655E0047D2F1 /* Build configuration list for PBXNativeTarget "RightClickExtension" */;
+			buildPhases = (
+				F145A5702DAE655E0047D2F1 /* Sources */,
+				F145A5712DAE655E0047D2F1 /* Frameworks */,
+				F145A5722DAE655E0047D2F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				F145A5752DAE655E0047D2F1 /* RightClickExtension */,
+			);
+			name = RightClickExtension;
+			packageProductDependencies = (
+			);
+			productName = RightClickExtension;
+			productReference = F145A5742DAE655E0047D2F1 /* RightClickExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		F1F95DAD2DAE3C8E0043F3FB /* RightClickTools */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F1F95DD02DAE3C8F0043F3FB /* Build configuration list for PBXNativeTarget "RightClickTools" */;
@@ -102,12 +183,15 @@
 				F1F95DAA2DAE3C8E0043F3FB /* Sources */,
 				F1F95DAB2DAE3C8E0043F3FB /* Frameworks */,
 				F1F95DAC2DAE3C8E0043F3FB /* Resources */,
+				F145A57C2DAE655E0047D2F1 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F145A57B2DAE655E0047D2F1 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
+				F145A5632DAE57D30047D2F1 /* Templates */,
 				F1F95DB02DAE3C8E0043F3FB /* RightClickTools */,
 			);
 			name = RightClickTools;
@@ -173,6 +257,9 @@
 				LastSwiftUpdateCheck = 1630;
 				LastUpgradeCheck = 1630;
 				TargetAttributes = {
+					F145A5732DAE655E0047D2F1 = {
+						CreatedOnToolsVersion = 16.3;
+					};
 					F1F95DAD2DAE3C8E0043F3FB = {
 						CreatedOnToolsVersion = 16.3;
 					};
@@ -203,11 +290,19 @@
 				F1F95DAD2DAE3C8E0043F3FB /* RightClickTools */,
 				F1F95DBB2DAE3C8F0043F3FB /* RightClickToolsTests */,
 				F1F95DC52DAE3C8F0043F3FB /* RightClickToolsUITests */,
+				F145A5732DAE655E0047D2F1 /* RightClickExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F145A5722DAE655E0047D2F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F1F95DAC2DAE3C8E0043F3FB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -232,6 +327,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F145A5702DAE655E0047D2F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F1F95DAA2DAE3C8E0043F3FB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -256,6 +358,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		F145A57B2DAE655E0047D2F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F145A5732DAE655E0047D2F1 /* RightClickExtension */;
+			targetProxy = F145A57A2DAE655E0047D2F1 /* PBXContainerItemProxy */;
+		};
 		F1F95DBE2DAE3C8F0043F3FB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F1F95DAD2DAE3C8E0043F3FB /* RightClickTools */;
@@ -269,6 +376,58 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		F145A5802DAE655E0047D2F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = RightClickExtension/RightClickExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RightClickExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RightClickExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Kylin.RightClickTools.RightClickExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F145A5812DAE655E0047D2F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = RightClickExtension/RightClickExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RightClickExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RightClickExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Kylin.RightClickTools.RightClickExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		F1F95DCE2DAE3C8F0043F3FB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -504,6 +663,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F145A57F2DAE655E0047D2F1 /* Build configuration list for PBXNativeTarget "RightClickExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F145A5802DAE655E0047D2F1 /* Debug */,
+				F145A5812DAE655E0047D2F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F1F95DA92DAE3C8E0043F3FB /* Build configuration list for PBXProject "RightClickTools" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
