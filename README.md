@@ -91,14 +91,27 @@ open RightClickTools.xcodeproj
 ## 项目结构
 ```
 RightClickTools/
-├── RightClickTools/          # 主应用程序
-├── RightClickExtension/      # Finder 扩展
-├── Templates/                # 文件模板
-│   ├── Template.txt
-│   ├── Template.md
-│   ├── Template.rtf
-│   └── ...
-└── Scripts/                  # 辅助脚本
+├── RightClickTools.xcodeproj/    # Xcode 项目文件
+├── Templates/                     # 文件模板目录
+│   ├── Template.txt              # 文本文件模板
+│   ├── Template.md               # Markdown 模板
+│   ├── Template.rtf              # RTF 模板
+│   ├── Template.docx             # Word 文档模板
+│   ├── Template.xlsx             # Excel 表格模板
+│   ├── Template.pptx             # PowerPoint 模板
+│   ├── Template.pages            # Pages 文档模板
+│   ├── Template.numbers          # Numbers 表格模板
+│   └── Template.key              # Keynote 演示文稿模板
+├── Core/                         # 核心功能实现
+│   ├── FinderSync.swift          # Finder 扩展核心实现
+│   ├── FileOperations.swift      # 文件操作管理
+│   └── TemplateManager.swift     # 模板文件管理
+├── Support/                      # 支持文件
+│   ├── Info.plist               # 项目配置文件
+│   └── RightClickExtension.entitlements  # 权限配置文件
+└── Scripts/                      # 辅助脚本
+    ├── install.command           # 安装脚本
+    └── test_run.command          # 测试运行脚本
 ```
 
 ## 常见问题
