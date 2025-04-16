@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F13FF7F12DAF4A9A00885AC6 /* FinderSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13FF7EE2DAF4A9A00885AC6 /* FinderSync.swift */; };
+		F13FF7FA2DAF646600885AC6 /* FileOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13FF7F92DAF646600885AC6 /* FileOperations.swift */; };
+		F13FF7FC2DAF647000885AC6 /* TemplateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13FF7FB2DAF647000885AC6 /* TemplateManager.swift */; };
 		F145A57D2DAE655E0047D2F1 /* RightClickExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F145A5742DAE655E0047D2F1 /* RightClickExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
@@ -49,21 +52,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F13FF7EE2DAF4A9A00885AC6 /* FinderSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderSync.swift; sourceTree = "<group>"; };
+		F13FF7EF2DAF4A9A00885AC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F13FF7F02DAF4A9A00885AC6 /* RightClickExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RightClickExtension.entitlements; sourceTree = "<group>"; };
+		F13FF7F92DAF646600885AC6 /* FileOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileOperations.swift; sourceTree = "<group>"; };
+		F13FF7FB2DAF647000885AC6 /* TemplateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateManager.swift; sourceTree = "<group>"; };
 		F145A5742DAE655E0047D2F1 /* RightClickExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RightClickExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1F95DAE2DAE3C8E0043F3FB /* RightClickTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RightClickTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1F95DBC2DAE3C8F0043F3FB /* RightClickToolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RightClickToolsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1F95DC62DAE3C8F0043F3FB /* RightClickToolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RightClickToolsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		F145A57E2DAE655E0047D2F1 /* Exceptions for "RightClickExtension" folder in "RightClickExtension" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = F145A5732DAE655E0047D2F1 /* RightClickExtension */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		F145A5632DAE57D30047D2F1 /* Templates */ = {
@@ -73,9 +71,6 @@
 		};
 		F145A5752DAE655E0047D2F1 /* RightClickExtension */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				F145A57E2DAE655E0047D2F1 /* Exceptions for "RightClickExtension" folder in "RightClickExtension" target */,
-			);
 			path = RightClickExtension;
 			sourceTree = "<group>";
 		};
@@ -137,6 +132,11 @@
 				F1F95DC92DAE3C8F0043F3FB /* RightClickToolsUITests */,
 				F145A5752DAE655E0047D2F1 /* RightClickExtension */,
 				F1F95DAF2DAE3C8E0043F3FB /* Products */,
+				F13FF7F92DAF646600885AC6 /* FileOperations.swift */,
+				F13FF7EE2DAF4A9A00885AC6 /* FinderSync.swift */,
+				F13FF7EF2DAF4A9A00885AC6 /* Info.plist */,
+				F13FF7F02DAF4A9A00885AC6 /* RightClickExtension.entitlements */,
+				F13FF7FB2DAF647000885AC6 /* TemplateManager.swift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -331,6 +331,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F13FF7F12DAF4A9A00885AC6 /* FinderSync.swift in Sources */,
+				F13FF7FA2DAF646600885AC6 /* FileOperations.swift in Sources */,
+				F13FF7FC2DAF647000885AC6 /* TemplateManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +386,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RightClickExtension/Info.plist;
@@ -395,6 +399,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Kylin.RightClickTools.RightClickExtension;
+				PRODUCT_MODULE_NAME = RightClickTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -409,6 +414,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RightClickExtension/Info.plist;
@@ -421,6 +427,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Kylin.RightClickTools.RightClickExtension;
+				PRODUCT_MODULE_NAME = RightClickTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
