@@ -1,0 +1,19 @@
+RightClickTools
+Copyright (c) 2024 KylinWDS. All Rights Reserved.
+
+本软件仅供学习和研究使用，严禁用于商业用途。
+使用本软件即表示您同意：
+1. 仅将本软件用于个人学习和研究目的
+2. 在下载后24小时内删除本软件
+3. 不会将本软件用于任何商业用途
+4. 不会对本软件进行反编译、反向工程或破解
+5. 不会重新分发本软件或其任何部分
+
+第三方商标声明：
+本软件中提到的所有第三方商标均属于其各自所有者：
+- Microsoft Office、Word、Excel、PowerPoint 是 Microsoft Corporation 的商标
+- Apple、Pages、Numbers、Keynote 是 Apple Inc. 的商标
+- Sublime Text 是 Sublime HQ Pty Ltd 的商标
+
+本软件不隶属于上述任何公司，仅提供文件操作便利性功能。
+如有侵权，请联系我们立即删除。 

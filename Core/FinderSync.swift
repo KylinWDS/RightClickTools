@@ -11,10 +11,30 @@ import FinderSync
 class FinderSync: FIFinderSync {
     private let fileOperations = FileOperations.shared
     private let templateManager = TemplateManager.shared
+    private let copyrightNotice = """
+        RightClickTools - 仅供学习研究使用
+        版权所有 (c) 2024 KylinWDS
+        请在24小时内删除，严禁商用
+        """
     
     override init() {
         super.init()
         FIFinderSyncController.default().directoryURLs = [URL(fileURLWithPath: "/")]
+        
+        // 显示版权提示
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+            let alert = NSAlert()
+            alert.messageText = "版权提示"
+            alert.informativeText = self.copyrightNotice
+            alert.alertStyle = .warning
+            alert.addButton(withTitle: "我同意")
+            alert.addButton(withTitle: "退出")
+            
+            let response = alert.runModal()
+            if response == .alertSecondButtonReturn {
+                NSApp.terminate(nil)
+            }
+        }
     }
     
     override func menu(for menuKind: FIMenuKind) -> NSMenu? {
