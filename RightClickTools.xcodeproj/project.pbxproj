@@ -1,0 +1,402 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		82E250622FB320AC35B19783 /* TemplateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4951D2307DE898A4B0D669FD /* TemplateManager.swift */; };
+		98ECCD335778A2CFCC2FEBC8 /* FileOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843FA5E0B6BBA771FD8CA740 /* FileOperations.swift */; };
+		9A0C42B20D95C27AA5989D3B /* FinderSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DE6030A244B3F22C23298F /* FinderSync.swift */; };
+		C03AE7B804F66F91C137C12F /* FileOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843FA5E0B6BBA771FD8CA740 /* FileOperations.swift */; };
+		CB59E78D7A305A81E4436426 /* TemplateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4951D2307DE898A4B0D669FD /* TemplateManager.swift */; };
+		EE6299708C8CEF35403A695A /* FinderSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DE6030A244B3F22C23298F /* FinderSync.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B94E4A744B95941356E7E923 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 651865E9318AA8CF67DE803A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 035063EFC0E2337ED2BACC47;
+			remoteInfo = RightClickTools;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		150BA510187C8AA5C66C771C /* RightClickExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RightClickExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4951D2307DE898A4B0D669FD /* TemplateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateManager.swift; sourceTree = "<group>"; };
+		51DE6030A244B3F22C23298F /* FinderSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderSync.swift; sourceTree = "<group>"; };
+		843FA5E0B6BBA771FD8CA740 /* FileOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileOperations.swift; sourceTree = "<group>"; };
+		BAF7C2C2B018854BBC53910C /* RightClickTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RightClickTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		52A297D2D3061B0620E25478 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				843FA5E0B6BBA771FD8CA740 /* FileOperations.swift */,
+				51DE6030A244B3F22C23298F /* FinderSync.swift */,
+				4951D2307DE898A4B0D669FD /* TemplateManager.swift */,
+			);
+			name = Core;
+			path = ../Core;
+			sourceTree = "<group>";
+		};
+		ADA9512CD7E5C09E8A33705C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				150BA510187C8AA5C66C771C /* RightClickExtension.appex */,
+				BAF7C2C2B018854BBC53910C /* RightClickTools.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFA94BE22A9DF7D1AFC9B3B1 = {
+			isa = PBXGroup;
+			children = (
+				52A297D2D3061B0620E25478 /* Core */,
+				ADA9512CD7E5C09E8A33705C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		035063EFC0E2337ED2BACC47 /* RightClickTools */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 093ADC9CF96BD51EA3E8D021 /* Build configuration list for PBXNativeTarget "RightClickTools" */;
+			buildPhases = (
+				D107C8BF295583BA0441E6EC /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RightClickTools;
+			packageProductDependencies = (
+			);
+			productName = RightClickTools;
+			productReference = BAF7C2C2B018854BBC53910C /* RightClickTools.app */;
+			productType = "com.apple.product-type.application";
+		};
+		23127F2879BBF911E921D9B5 /* RightClickExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6056ED2FDD23211BAF17742E /* Build configuration list for PBXNativeTarget "RightClickExtension" */;
+			buildPhases = (
+				B3C21DE23949AA8B17E3F162 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5DC1D5BBB6D55DAAF8902146 /* PBXTargetDependency */,
+			);
+			name = RightClickExtension;
+			packageProductDependencies = (
+			);
+			productName = RightClickExtension;
+			productReference = 150BA510187C8AA5C66C771C /* RightClickExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		651865E9318AA8CF67DE803A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					035063EFC0E2337ED2BACC47 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					23127F2879BBF911E921D9B5 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4B1B07841CB91F2AAE91AFC5 /* Build configuration list for PBXProject "RightClickTools" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = FFA94BE22A9DF7D1AFC9B3B1;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 54;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				23127F2879BBF911E921D9B5 /* RightClickExtension */,
+				035063EFC0E2337ED2BACC47 /* RightClickTools */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B3C21DE23949AA8B17E3F162 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98ECCD335778A2CFCC2FEBC8 /* FileOperations.swift in Sources */,
+				9A0C42B20D95C27AA5989D3B /* FinderSync.swift in Sources */,
+				82E250622FB320AC35B19783 /* TemplateManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D107C8BF295583BA0441E6EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C03AE7B804F66F91C137C12F /* FileOperations.swift in Sources */,
+				EE6299708C8CEF35403A695A /* FinderSync.swift in Sources */,
+				CB59E78D7A305A81E4436426 /* TemplateManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5DC1D5BBB6D55DAAF8902146 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 035063EFC0E2337ED2BACC47 /* RightClickTools */;
+			targetProxy = B94E4A744B95941356E7E923 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		057BABD39D43D40B7CB48D63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ../Support/RightClickExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = ../Support/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kylin.RightClickTools.FinderExtension;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		52B3588B69786AA4965F636E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ../Support/RightClickExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = ../Support/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kylin.RightClickTools;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		53234599685ABDF0E8F663BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		82638291124B7126DEB660BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ../Support/RightClickExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = ../Support/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kylin.RightClickTools.FinderExtension;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		86ED526A1DB097E976A2FBFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		ABF677C2A2E9501B72D3A4FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ../Support/RightClickExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = ../Support/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kylin.RightClickTools;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		093ADC9CF96BD51EA3E8D021 /* Build configuration list for PBXNativeTarget "RightClickTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52B3588B69786AA4965F636E /* Debug */,
+				ABF677C2A2E9501B72D3A4FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4B1B07841CB91F2AAE91AFC5 /* Build configuration list for PBXProject "RightClickTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86ED526A1DB097E976A2FBFE /* Debug */,
+				53234599685ABDF0E8F663BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6056ED2FDD23211BAF17742E /* Build configuration list for PBXNativeTarget "RightClickExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82638291124B7126DEB660BF /* Debug */,
+				057BABD39D43D40B7CB48D63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 651865E9318AA8CF67DE803A /* Project object */;
+}
